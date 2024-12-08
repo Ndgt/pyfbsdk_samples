@@ -25,10 +25,6 @@ else:
 lScene = FbxScene.Create(lSdkManager, "New Scene")
 lImporter.Import(lScene)
 
-# Get Animation Components
-lAnimStack = lScene.GetCurrentAnimationStack()
-lAnimLayer = lAnimStack.GetMember(0)
-
 
 with open("data.txt", "w", encoding="utf-8") as outputfile:
     # Get All mesh in the Scene
